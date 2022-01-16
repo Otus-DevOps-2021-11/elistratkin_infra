@@ -5,3 +5,9 @@ on: pull_request
 # A list of reviewers to be added to pull requests (GitHub user name)
 reviewers:
   - express42-bot
+
+jobs:
+  add-reviews:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: kentaro-m/auto-assign-action@v1.1.2
